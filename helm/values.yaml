@@ -11,9 +11,9 @@ service:
   type: ClusterIP
   port: 8080
 gateway:
-  hostname: "kbot.example.com"
-  parentGatewayName: "eg"
-  parentGatewayNamespace: "envoy-gateway-system"
+  hostname: "kbot.k3s.comelove.pp.ua"
+  parentGatewayName: "external-gateway"
+  parentGatewayNamespace: "gateway-infra"
   weight: 1
   path: /
 
